@@ -12,7 +12,7 @@ body {
 /* Estilização do Header */
 header {
     background: #0073e6;
-    padding: 35px 0;
+    padding: 20px 0;
     color: white;
 }
 
@@ -52,13 +52,43 @@ header {
     color: #ffd700;
 }
 
-#menu-toggle {
-    display: none;
-}
-
+/* Ícone do Menu Hambúrguer */
 .menu2 {
     font-size: 30px;
     cursor: pointer;
     display: none;
     color: white;
+}
+
+/* Checkbox escondido */
+#menu-toggle {
+    display: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #0073e6;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Quando o checkbox está marcado, o menu aparece */
+    #menu-toggle:checked + .menu2 + nav .menu {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu2 {
+        display: block;
+    }
 }
