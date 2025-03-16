@@ -52,6 +52,10 @@ header {
     color: #ffd700;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 .menu2 {
     font-size: 30px;
     cursor: pointer;
