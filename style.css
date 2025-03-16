@@ -52,18 +52,3 @@ header {
 .menu a:hover {
     color: #ffd700;
 }
-
-/* Botão */
-.btn {
-    background: #ffd700;
-    color: #0073e6;
-    padding: 8px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #ffc107;
-}
