@@ -12,9 +12,8 @@ body {
 /* Estilização do Header */
 header {
     background: #0073e6;
-    padding: 25px 0;
+    padding: 35px 0;
     color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -51,4 +50,11 @@ header {
 
 .menu a:hover {
     color: #ffd700;
+}
+
+.menu2 {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: white;
 }
