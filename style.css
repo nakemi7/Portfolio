@@ -5,8 +5,10 @@
     box-sizing: border-box;
 }
 
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 /* Estilos do header */
@@ -19,77 +21,37 @@ header {
     color: white;
 }
 
-.logo h1 {
+header .logo h1 {
     font-size: 24px;
 }
 
-/* Estilos do menu de navegação */
-.nav-bar ul {
+header .nav-bar ul {
     display: flex;
     list-style: none;
 }
 
-.nav-bar ul li {
+header .nav-bar ul li {
     margin-right: 20px;
 }
 
-.nav-bar ul li a {
+header .nav-bar ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-/* Menu de hambúrguer */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+header .nav-bar ul li a:hover {
+    text-decoration: underline;
 }
 
-.hamburger .bar {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-}
-
-/* Estilo do menu mobile */
-.mobile-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 50px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.mobile-menu ul {
-    list-style: none;
-}
-
-.mobile-menu ul li {
-    margin: 15px 0;
-}
-
-.mobile-menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-/* Responsividade para telas menores */
+/* Responsividade (ajuste em telas menores) */
 @media (max-width: 768px) {
-    .nav-bar ul {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .mobile-menu.active {
+    header .nav-bar ul {
         display: block;
+        text-align: center;
+    }
+
+    header .nav-bar ul li {
+        margin: 10px 0;
     }
 }
