@@ -1,94 +1,80 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
-/* Estilização do Header */
+/* Estilo do cabeçalho */
 header {
-    background: #0073e6;
-    padding: 20px 0;
-    color: white;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 20px;
+    background: #333;
+    color: white;
+    position: relative;
 }
 
-/* Estilização do Logo */
 .logo {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Estilização do Menu */
-.menu {
-    list-style: none;
-    display: flex;
-}
-
-.menu li {
-    margin: 0 15px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.menu a:hover {
-    color: #ffd700;
-}
-
-/* Ícone do Menu Hambúrguer */
-.menu2 {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-    color: white;
-}
-
-/* Checkbox escondido */
+/* Esconde o checkbox */
 #menu-toggle {
     display: none;
 }
 
-/* Responsivo */
+/* Ícone do menu hambúrguer */
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Escondido no desktop */
+    color: white;
+}
+
+/* Estilo do menu lateral */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Escondido inicialmente */
+    width: 250px;
+    height: 100%;
+    background: #222;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu ul li {
+    margin: 15px 0;
+}
+
+.nav-menu ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Quando o checkbox estiver marcado, o menu aparece */
+#menu-toggle:checked + .hamburger + .nav-menu {
+    left: 0;
+}
+
+/* Responsividade: Mostra o ícone do menu em telas menores */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #0073e6;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    /* Quando o checkbox está marcado, o menu aparece */
-    #menu-toggle:checked + .menu2 + nav .menu {
-        display: flex;
-    }
-
-    .menu li {
-        margin: 10px 0;
-    }
-
-    .menu2 {
+    .hamburger {
         display: block;
     }
 }
