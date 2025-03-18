@@ -6,16 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #FFEDFA;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    padding: 35px;
+    background-color: #BE5985;
+    color: #FFEDFA;
 }
 
 header .logo h1 {
@@ -32,7 +32,7 @@ header .navegacao ul li {
 }
 
 header .navegacao ul li a {
-    color: white;
+    color: #FFEDFA;
     text-decoration: none;
     font-size: 18px;
 }
