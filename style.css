@@ -71,10 +71,3 @@ header {
 #menu-toggle:checked + .hamburger + .nav-menu {
     left: 0;
 }
-
-/* Responsividade: Mostra o ícone do menu em telas menores */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-}
