@@ -3,71 +3,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
 }
 
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Estilo do cabeçalho */
+/* Estilos do header */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 15px 20px;
-    background: #333;
-    color: white;
-    position: relative;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Esconde o checkbox */
-#menu-toggle {
-    display: none;
-}
-
-/* Ícone do menu hambúrguer */
-.hamburger {
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Escondido no desktop */
-    color: white;
-}
-
-/* Estilo do menu lateral */
-.nav-menu {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Escondido inicialmente */
-    width: 250px;
-    height: 100%;
-    background: #222;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-
-.nav-menu ul {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.nav-menu ul li {
-    margin: 15px 0;
-}
-
-.nav-menu ul li a {
+    padding: 20px;
+    background-color: #333;
     color: white;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Estilos do menu de navegação */
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    margin-right: 20px;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
     font-size: 18px;
 }
 
-/* Quando o checkbox estiver marcado, o menu aparece */
-#menu-toggle:checked + .hamburger + .nav-menu {
+/* Menu de hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Estilo do menu mobile */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
     left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 50px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu ul li {
+    margin: 15px 0;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
 }
