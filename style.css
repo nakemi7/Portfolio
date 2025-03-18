@@ -1,17 +1,14 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Estilos do header */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,33 +22,21 @@ header .logo h1 {
     font-size: 24px;
 }
 
-header .nav-bar ul {
+header .navegacao ul {
     display: flex;
     list-style: none;
 }
 
-header .nav-bar ul li {
+header .navegacao ul li {
     margin-right: 20px;
 }
 
-header .nav-bar ul li a {
+header .navegacao ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-header .nav-bar ul li a:hover {
+header .navegacao ul li a:hover {
     text-decoration: underline;
-}
-
-/* Responsividade (ajuste em telas menores) */
-@media (max-width: 768px) {
-    header .nav-bar ul {
-        display: block;
-        text-align: center;
-    }
-
-    header .nav-bar ul li {
-        margin: 10px 0;
-    }
 }
