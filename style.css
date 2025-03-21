@@ -16,21 +16,46 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     padding: 35px;
     background-color: var(--roseo-escuro);
     color: var(--nao-branco);
     position: relative;
-    justify-content: space-between;
 }
 
 .logo h1 {
     font-size: 24px;
 }
 
+.navegacao {
+    display: flex;
+    align-items: center;
+}
+
+.navegacao ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao ul li {
+    margin-right: 20px;
+}
+
+.navegacao ul li a {
+    color: var(--nao-branco);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navegacao ul li a:hover {
+    text-decoration: underline;
+}
+
 .menu {
     position: relative;
+    margin-left: 20px; /* Adicionando espaço entre a navegação e o botão */
 }
 
 .botao-disciplinas {
@@ -73,25 +98,6 @@ header {
 
 #menu-toggle:checked + .botao-disciplinas {
     background-color: cornflowerblue;
-}
-
-.navegacao ul {
-    display: flex;
-    list-style: none;
-}
-
-.navegacao ul li {
-    margin-right: 20px;
-}
-
-.navegacao ul li a {
-    color: var(--nao-branco);
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navegacao ul li a:hover {
-    text-decoration: underline;
 }
 
 #menu-toggle {
