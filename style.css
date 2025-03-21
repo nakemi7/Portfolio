@@ -4,18 +4,72 @@
     box-sizing: border-box;
 }
 
+:root{
+    --roseo-escuro: #BE5985;
+    --nao-branco:#FFEDFA;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFEDFA;
+    background-color: var(--nao-branco);
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     align-items: center;
     padding: 35px;
-    background-color: #BE5985;
-    color: #FFEDFA;
+    background-color: var(--roseo-escuro);
+    color: var(--nao-branco);
+    position: relative;
+    justify-content: center;
+}
+
+.menu{
+    width: 20%;
+    display: inline-block;
+}
+
+.botao-disciplinas {
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    background-color: aquamarine;
+    border: none;
+    padding: 1.05rem 1.05rem;
+    color: black;
+}
+
+.vergas {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    box-shadow: 0 2px 5px var(--roseo-escuro);
+    min-width:190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
+
+.vergas a {
+    color: chartreuse;
+    padding:0.75rem 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: center ;
+}
+
+.vergas a:hover {
+    background-color: darkmagenta;
+}
+
+#menu-toogle:checked ~ .vergas {
+    display: block;
+}
+
+#menu-toogle:checked + .botao-disciplinas {
+    background-color: cornflowerblue;
 }
 
 header .logo h1 {
@@ -32,11 +86,15 @@ header .navegacao ul li {
 }
 
 header .navegacao ul li a {
-    color: #FFEDFA;
+    color: var(--nao-branco);
     text-decoration: none;
     font-size: 18px;
 }
 
 header .navegacao ul li a:hover {
     text-decoration: underline;
+}
+
+#menu-toogle {
+    display: none;
 }
