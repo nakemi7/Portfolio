@@ -5,8 +5,10 @@
 }
 
 :root {
-    --roseo-escuro: #BE5985;
-    --nao-branco: #FFEDFA;
+    --roseo-escuro: #CA8787;
+    --nao-branco: #FFD0D0;
+    --el-botoa: #CA8787;
+    #E1ACAC;
 }
 
 body {
@@ -55,17 +57,17 @@ header {
 
 .menu {
     position: relative;
-    margin-left: 20px; /* Adicionando espaço entre a navegação e o botão */
+    margin-left: 20px;
 }
 
 .botao-disciplinas {
     cursor: pointer;
     font-size: 2rem;
     background: none;
-    background-color: aquamarine;
+    background-color: var(--el-botoa);
     border: none;
     padding: 1.05rem 1.05rem;
-    color: black;
+    color: var(--nao-branco);
 }
 
 .vergas {
