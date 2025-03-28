@@ -5,16 +5,16 @@
 }
 
 :root {
-    --um: #0d1b2a;
+    --cor-header: #0d1b2a;
     --dois: #1b263b;
     --tres: #415a77;
-    --quatro: #778da9;
-    --cinco: #e0e1dd;
+    --letras-header: #778da9;
+    --cor-fundo: #e0e1dd;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--cinco);
+    background-color: var(--cor-fundo);
 }
 
 header {
@@ -23,8 +23,8 @@ header {
     width: 100%;
     align-items: center;
     padding: 35px;
-    background-color: var(--um);
-    color: var(--quatro);
+    background-color: var(--cor-header);
+    color: var(--letras-header);
     position: relative;
 }
 
