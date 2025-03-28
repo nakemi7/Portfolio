@@ -95,7 +95,7 @@ header {
     background-color: darkmagenta;
 }
 
-#menu-toggle:checked ~ .vergas {
+#menu-toggle:checked ~ .vertical {
     display: block;
 }
 
