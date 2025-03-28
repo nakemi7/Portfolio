@@ -1,107 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+:root{
+    --rosinha:#0d1b2a;
+    --açai:#778da9;
+    color: #e0e1dd;
 
-:root {
-    --cor-header: #0d1b2a;
-    --dois: #1b263b;
-    --tres: #415a77;
-    --letras-header: #778da9;
-    --cor-fundo: #e0e1dd;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+    background-color: var(--rosinha);
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    padding: 35px;
-    background-color: var(--cor-header);
-    color: var(--letras-header);
-    position: relative;
+    padding: 15px;
+    background-color: var(--açai);
+    grid-template-columns: 95% 5%;
+    display: grid;
+
 }
 
-.title h1 {
-    font-size: 24px;
+h1 {
+    color: var(--bege);
+    display: flex;
+    justify-content: center;
+}
+
+.materia-links {
+    display: flex;              
+    justify-content: center;    
+    align-items: center;       
+}
+  
+.materia-links ul {
+    list-style: none;
+    gap: 125px;                  
+    margin: 0 auto;  
+    display: flex;  
+    text-decoration: none;  
+}
+
+.materia-links a {
+    color: var(beige);
+    text-decoration: none;
+    font-size: 20px;  
+}
+
+.materia-links a:hover {
+    text-decoration: underline;
+    font-size: 22px; 
+}
+
+.hamburguer {
+    position: relative;
 }
 
 .navegacao {
     display: flex;
     align-items: center;
-}
-
-.navegacao ul {
-    display: flex;
-    list-style: none;
-}
-
-.navegacao ul li {
-    margin-right: 20px;
-}
-
-.navegacao ul li a {
-    color: var(--quatro);
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.navegacao ul li a:hover {
-    text-decoration: underline;
-}
-
-.menu {
-    position: relative;
-    margin-left: 20px;
+    margin: 0 auto;
 }
 
 .botao-disciplinas {
+    font-size: 24px;
+    color: var(beige);
     cursor: pointer;
-    font-size: 2rem;
-    background: none;
-    background-color: var(--um);
-    border: none;
-    padding: 1.05rem 1.05rem;
+    user-select: none;
 }
 
 .vertical {
-    display: none;
+    list-style: none;
     position: absolute;
-    background-color: var(--um);
-    box-shadow: 0 2px 5px var(--tres);
-    min-width: 190px;
-    z-index: 1;
-    left: 1rem;
-    top: 100%;
+    right: 0;
+    top: 40px;
+    background: var(--açai);
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    display: none;
+    border-radius: 5px;
 }
 
-.vertical a {
-    color: var(--quatro);
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    font-size: 2rem;
-    display: block;
+.vertical li {
     text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: beige;
 }
 
-.vertical a:hover {
-    background-color: var(--dois);
-}
-
-#menu-toggle:checked ~ .vertical {
+.vertical li a {
+    color: var(beige);
+    text-decoration: none;
     display: block;
+    color: beige;
 }
 
-#menu-toggle:checked + .botao-disciplinas {
-    background-color: var(--tres);
+.vertical li:hover {
+    background: var(--rosa);
 }
-
 #menu-toggle {
     display: none;
+}
+
+#menu-toggle:checked + .botao-disciplinas + .vertical {
+    display: block;
 }
