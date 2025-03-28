@@ -92,7 +92,7 @@ header {
 }
 
 .vertical a:hover {
-    background-color: var(--tres);
+    background-color: var(--dois);
 }
 
 #menu-toggle:checked ~ .vertical {
