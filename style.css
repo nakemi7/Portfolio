@@ -65,16 +65,15 @@ header {
     cursor: pointer;
     font-size: 2rem;
     background: none;
-    background-color: var(--dois);
+    background-color: var(--um);
     border: none;
     padding: 1.05rem 1.05rem;
-    color: var(--quatro);
 }
 
 .vertical {
     display: none;
     position: absolute;
-    background-color: var(--tres);
+    background-color: var(--um);
     box-shadow: 0 2px 5px var(--tres);
     min-width: 190px;
     z-index: 1;
