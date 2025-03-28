@@ -70,7 +70,7 @@ header {
     color: var(--nao-branco);
 }
 
-.vergas {
+.vertical {
     display: none;
     position: absolute;
     background-color: blue;
@@ -81,7 +81,7 @@ header {
     top: 100%;
 }
 
-.vergas a {
+.vertical a {
     color: chartreuse;
     padding: 0.75rem 1rem;
     text-decoration: none;
@@ -90,11 +90,11 @@ header {
     text-align: center;
 }
 
-.vergas a:hover {
+.vertical a:hover {
     background-color: darkmagenta;
 }
 
-#menu-toggle:checked ~ .vergas {
+#menu-toggle:checked ~ .vertical {
     display: block;
 }
 
