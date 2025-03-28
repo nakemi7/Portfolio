@@ -5,15 +5,16 @@
 }
 
 :root {
-    --roseo-escuro: #CA8787;
-    --nao-branco: #FFD0D0;
-    --el-botoa: #CA8787;
-    #E1ACAC;
+    --um: #0d1b2a;
+    --dois: #1b263b;
+    --tres: #415a77;
+    --quatro: #778da9;
+    --cinco: #e0e1dd;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--nao-branco);
+    background-color: var(--cinco);
 }
 
 header {
@@ -22,12 +23,12 @@ header {
     width: 100%;
     align-items: center;
     padding: 35px;
-    background-color: var(--roseo-escuro);
-    color: var(--nao-branco);
+    background-color: var(--um);
+    color: var(--quatro);
     position: relative;
 }
 
-.logo h1 {
+.title h1 {
     font-size: 24px;
 }
 
@@ -70,7 +71,7 @@ header {
     color: var(--nao-branco);
 }
 
-.vergas {
+.vertical {
     display: none;
     position: absolute;
     background-color: blue;
@@ -81,7 +82,7 @@ header {
     top: 100%;
 }
 
-.vergas a {
+.vertical a {
     color: chartreuse;
     padding: 0.75rem 1rem;
     text-decoration: none;
@@ -90,7 +91,7 @@ header {
     text-align: center;
 }
 
-.vergas a:hover {
+.vertical a:hover {
     background-color: darkmagenta;
 }
 
