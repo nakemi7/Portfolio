@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roseo-escuro: #CA8787;
+    --nao-branco: #FFD0D0;
+    --el-botoa: #CA8787;
+    --sla:#E1ACAC;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--nao-branco);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 35px;
+    background-color: var(--roseo-escuro);
+    color: var(--nao-branco);
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+}
+
+.navegacao ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacao ul li {
+    margin-right: 20px;
+}
+
+.navegacao ul li a {
+    color: var(--nao-branco);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navegacao ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    position: relative;
+    margin-left: 20px;
+}
+
+.botao-disciplinas {
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    background-color: var(--el-botoa);
+    border: none;
+    padding: 1.05rem 1.05rem;
+    color: var(--nao-branco);
+}
+
+.vertical {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    box-shadow: 0 2px 5px var(--roseo-escuro);
+    min-width: 190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
+
+.vertical a {
+    color: chartreuse;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.vertical a:hover {
+    background-color: darkmagenta;
+}
+
+#menu-toggle:checked ~ .vertical {
+    display: block;
+}
+
+#menu-toggle:checked + .botao-disciplinas {
+    background-color: cornflowerblue;
+}
+
+#menu-toggle {
+    display: none;
+}
