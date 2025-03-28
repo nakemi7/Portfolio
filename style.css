@@ -38,7 +38,7 @@ header {
 
 .botao-disciplinas {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 18px;
     background: none;
     background-color: var(--el-botoa);
     border: none;
@@ -61,7 +61,7 @@ header {
     color: chartreuse;
     padding: 0.75rem 1rem;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 18px;
     display: block;
     text-align: center;
 }
