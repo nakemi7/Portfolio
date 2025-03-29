@@ -13,7 +13,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--nao-branco);
+    background-color: var(--cor-fundo);
 }
 
 header {
@@ -22,8 +22,8 @@ header {
     width: 100%;
     align-items: center;
     padding: 35px;
-    background-color: var(--roseo-escuro);
-    color: var(--nao-branco);
+    background-color: var(--cor-header);
+    color: var(--cor-fundo);
     position: relative;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 .navegacao ul li a {
-    color: var(--nao-branco);
+    color: var(--cor-fundo);
     text-decoration: none;
     font-size: 18px;
 }
@@ -64,16 +64,15 @@ header {
     cursor: pointer;
     font-size: 18px;
     background: none;
-    background-color: var(--el-botoa);
     border: none;
     padding: 1.05rem 1.05rem;
-    color: var(--nao-branco);
+    color: var(--cor-fundo);
 }
 
 .vertical {
     display: none;
     position: absolute;
-    background-color: blue;
+    background-color: var(--botao);
     box-shadow: 0 2px 5px var(--roseo-escuro);
     min-width: 190px;
     z-index: 1;
@@ -82,7 +81,7 @@ header {
 }
 
 .vertical a {
-    color: chartreuse;
+    color: var(--cor-fundo);
     padding: 0.75rem 1rem;
     text-decoration: none;
     font-size: 18px;
@@ -91,7 +90,7 @@ header {
 }
 
 .vertical a:hover {
-    background-color: darkmagenta;
+    background-color: var(--sla);
 }
 
 #menu-toggle:checked ~ .vertical {
@@ -99,7 +98,7 @@ header {
 }
 
 #menu-toggle:checked + .botao-disciplinas {
-    background-color: cornflowerblue;
+    background-color: var(--cor-header);
 }
 
 #menu-toggle {
