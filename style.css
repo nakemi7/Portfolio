@@ -5,15 +5,15 @@
 }
 
 :root {
-    --roseo-escuro: #CA8787;
-    --nao-branco: #FFD0D0;
-    --el-botoa: #CA8787;
+    --cor-header: #3b6064;
+    --cor-fundo: #c9e4ca;
+    --palavras: #55828b;
     --sla:#E1ACAC;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--nao-branco);
+    background-color: var(--cor-fundo);
 }
 
 header {
@@ -22,8 +22,8 @@ header {
     width: 100%;
     align-items: center;
     padding: 35px;
-    background-color: var(--roseo-escuro);
-    color: var(--nao-branco);
+    background-color: var(--cor-header);
+    color: var(--palavras);
     position: relative;
 }
 
