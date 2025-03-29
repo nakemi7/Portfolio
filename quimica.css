@@ -5,10 +5,10 @@
 }
 
 :root {
-    --roseo-escuro: #CA8787;
-    --nao-branco: #FFD0D0;
-    --el-botoa: #CA8787;
-    --sla:#E1ACAC;
+    --cor-header: #3b6064;
+    --cor-fundo: #c9e4ca;
+    --botao: #55828b;
+    --sla:#87bba2;
 }
 
 body {
