@@ -7,7 +7,7 @@
 :root {
     --cor-header: #3b6064;
     --cor-fundo: #c9e4ca;
-    --palavras: #55828b;
+    --botao: #55828b;
     --sla:#E1ACAC;
 }
 
@@ -23,7 +23,7 @@ header {
     align-items: center;
     padding: 35px;
     background-color: var(--cor-header);
-    color: var(--palavras);
+    color: var(--cor-fundo);
     position: relative;
 }
 
@@ -40,17 +40,17 @@ header {
     cursor: pointer;
     font-size: 18px;
     background: none;
-    background-color: var(--el-botoa);
+    background-color: var(--botao);
     border: none;
     padding: 1.05rem 1.05rem;
-    color: var(--nao-branco);
+    color: var(--cor-fundo);
 }
 
 .vertical {
     display: none;
     position: absolute;
-    background-color: var(--sla);
-    box-shadow: 0 2px 5px var(--roseo-escuro);
+    background-color: var(--botao);
+    box-shadow: 0 2px 5px;
     min-width: 190px;
     z-index: 1;
     left: 1rem;
