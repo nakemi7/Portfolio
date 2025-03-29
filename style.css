@@ -40,7 +40,6 @@ header {
     cursor: pointer;
     font-size: 18px;
     background: none;
-    background-color: var(--botao);
     border: none;
     padding: 1.05rem 1.05rem;
     color: var(--cor-fundo);
