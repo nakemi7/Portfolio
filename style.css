@@ -80,3 +80,14 @@ header {
 #menu-toggle {
     display: none;
 }
+
+footer {
+    background-color: var(--cor-header);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+}
