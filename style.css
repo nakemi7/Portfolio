@@ -90,4 +90,5 @@ footer {
 footer p {
     margin-bottom: 0px;
     font-family: "Montserrat", sans-serif;
+    color: var(--cor-fundo);
 }
