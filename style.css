@@ -12,7 +12,19 @@ html, body {
 
 header {
     flex-shrink: 0;
+    background-color: #6A2C8B; 
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+header .titulo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
 
 footer {
     flex-shrink: 0;
@@ -55,16 +67,18 @@ main {
 }
 
 .nav-menu ul li a {
+    font-size: 1.1em;
     color: white;
     text-decoration: none;
-    padding: 8px;
+    padding: 10px;
     display: block;
     border-radius: 4px;
-    transition: background 0.3s;
+    transition: background 0.3s,color 0.3s;
 }
-
+ 
 .nav-menu ul li a:hover {
     background-color: #3D365C;
+    color: #FFD700;
 }
 
 .nav-menu.active {
