@@ -7,18 +7,27 @@
 </head>
 <body>
     <header>
-        <h1>Portfólio Escolar</h1>
-        <nav class="nav-externa">
+        <div class="menu-toggle" onclick="toggleMenu('menuExterno')">☰ Disciplinas</div>
+        <nav class="nav-menu" id="menuExterno">
             <ul>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="matematica.html">Matemática</a></li>
                 <li><a href="fisica.html">Física</a></li>
                 <li><a href="quimica.html">Química</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
         <p>Bem-vindo ao portfólio escolar! Clique em uma disciplina acima para visualizar suas atividades.</p>
     </main>
+    <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            menu.classList.toggle("active");
+        }
+        </script>
+        
     <footer>
         <p>Desenvolvido por [Seu Nome] — © 2025</p>
     </footer>

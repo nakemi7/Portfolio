@@ -7,15 +7,18 @@
 </head>
 <body>
     <header>
-        <nav class="nav-externa">
+        <div class="menu-toggle" onclick="toggleMenu('menuExterno')">☰ Disciplinas</div>
+        <nav class="nav-menu" id="menuExterno">
             <ul>
-                <li><a href="index.html">Início</a></li> <!-- Aqui está o link para voltar -->
+                <li><a href="index.html">Início</a></li>
                 <li><a href="matematica.html">Matemática</a></li>
                 <li><a href="fisica.html">Física</a></li>
                 <li><a href="quimica.html">Química</a></li>
             </ul>
         </nav>
-        <nav class="nav-interna">
+    
+        <div class="menu-toggle" onclick="toggleMenu('menuInterno')">☰ Conteúdo</div>
+        <nav class="nav-menu" id="menuInterno">
             <ul>
                 <li><a href="#atividades">Atividades</a></li>
                 <li><a href="#provas">Provas</a></li>
@@ -23,6 +26,7 @@
             </ul>
         </nav>
     </header>
+    
     
 
     <main>
@@ -42,6 +46,13 @@
             </div>
         </section>
     </main>
+    <script>
+        function toggleMenu(id) {
+            const menu = document.getElementById(id);
+            menu.classList.toggle("active");
+        }
+        </script>
+        
 
     <footer>
         <p>Desenvolvido por [Seu Nome] — © 2025</p>

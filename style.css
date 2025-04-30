@@ -92,3 +92,45 @@ footer p {
     font-family: "Montserrat", sans-serif;
     color: var(--cor-fundo);
 }
+/* Estilo do menu hambúrguer */
+.menu-toggle {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.nav-menu {
+    display: none;
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 5px 0;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #666;
+}
+
+.nav-menu.active {
+    display: block;
+}
