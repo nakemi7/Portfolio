@@ -1,36 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Física</title>
-    <link rel="stylesheet" href="fisica.css">
+    <title>Matemática | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav class="nav-externa">
+            <ul>
+                <li><a href="matematica.html">Matemática</a></li>
+                <li><a href="fisica.html">Física</a></li>
+                <li><a href="quimica.html">Química</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-interna">
+            <ul>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#provas">Provas</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <div class="logo">
-        <h1>Física</h1>
-    </div>
-    <div class="navegacao">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="flash.html">Flash Cards</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Materiais</a></li>
-        </ul>
-        <div class="menu">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="botao-disciplinas">Matérias</label>
-            <div class="vertical">
-                <a href="matematica.html">Matemática</a>
-                <a href="fisica.html">Física</a>
-                <a href="quimica.html">Química</a>
+    <main>
+        <section>
+            <h2>Matemática</h2>
+            <div class="secao" id="atividades">
+                <h3>Atividades</h3>
+                <p>Resolução de equações e exercícios sobre funções.</p>
             </div>
-        </div>
-    </div>
-</header>
+            <div class="secao" id="provas">
+                <h3>Provas</h3>
+                <p>Prova bimestral de álgebra e geometria analítica.</p>
+            </div>
+            <div class="secao" id="relatorios">
+                <h3>Relatórios</h3>
+                <p>Relatório sobre estatística aplicada no cotidiano.</p>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>Desenvolvido por [Seu Nome] — © 2025</p>
+    </footer>
 </body>
 </html>

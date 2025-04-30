@@ -1,106 +1,76 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --cor-header: #3b6064;
-    --cor-fundo: #c9e4ca;
-    --botao: #55828b;
-    --sla:#87bba2;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: var(--cor-fundo);
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
+    background-color: #333;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 35px;
-    background-color: var(--cor-header);
-    color: var(--cor-fundo);
-    position: relative;
+    flex-wrap: wrap;
 }
 
-.logo h1 {
-    font-size: 24px;
-}
-
-.navegacao {
-    display: flex;
-    align-items: center;
-}
-
-.navegacao ul {
-    display: flex;
+nav ul {
     list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
-.navegacao ul li {
-    margin-right: 20px;
-}
-
-.navegacao ul li a {
-    color: var(--cor-fundo);
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
 }
 
-.navegacao ul li a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    background-color: #555;
 }
 
-.menu {
-    position: relative;
-    margin-left: 20px;
+/* Corpo principal */
+main {
+    padding: 20px;
 }
 
-.botao-disciplinas {
-    cursor: pointer;
-    font-size: 18px;
-    background: none;
-    border: none;
-    padding: 1.05rem 1.05rem;
-    color: var(--cor-fundo);
+.disciplina {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.vertical {
-    display: none;
-    position: absolute;
-    background-color: var(--botao);
-    box-shadow: 0 2px 5px var(--roseo-escuro);
-    min-width: 190px;
-    z-index: 1;
-    left: 1rem;
-    top: 100%;
+.disciplina h2 {
+    color: #222;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 15px;
 }
 
-.vertical a {
-    color: var(--cor-fundo);
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
+.secao {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.secao h3 {
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: #fff;
     text-align: center;
-}
-
-.vertical a:hover {
-    background-color: var(--sla);
-}
-
-#menu-toggle:checked ~ .vertical {
-    display: block;
-}
-
-#menu-toggle:checked + .botao-disciplinas {
-    background-color: var(--cor-header);
-}
-
-#menu-toggle {
-    display: none;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
 }

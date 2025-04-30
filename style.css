@@ -1,76 +1,94 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --cor-header: #3b6064;
+    --cor-fundo: #c9e4ca;
+    --botao: #55828b;
+    --sla:#87bba2;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
+    background-color: var(--cor-fundo);
 }
 
-/* Cabeçalho */
 header {
-    background-color: #333;
-    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 35px;
+    background-color: var(--cor-header);
+    color: var(--cor-fundo);
+    position: relative;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+.logo h1 {
+    font-size: 24px;
 }
 
-nav ul li a {
-    color: #fff;
+.menu {
+    position: relative;
+    margin-left: 20px;
+}
+
+.botao-disciplinas {
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    border: none;
+    padding: 1.05rem 1.05rem;
+    color: var(--cor-fundo);
+}
+
+.vertical {
+    display: none;
+    position: absolute;
+    background-color: var(--botao);
+    box-shadow: 0 2px 5px;
+    min-width: 190px;
+    z-index: 1;
+    left: 1rem;
+    top: 100%;
+}
+
+.vertical a {
+    color: var(--cor-fundo);
+    padding: 0.75rem 1rem;
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Corpo principal */
-main {
-    padding: 20px;
-}
-
-.disciplina {
-    margin-bottom: 40px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.disciplina h2 {
-    color: #222;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 15px;
-}
-
-.secao {
-    margin-bottom: 15px;
-    padding-left: 10px;
-}
-
-.secao h3 {
-    color: #555;
-}
-
-/* Rodapé */
-footer {
-    background-color: #222;
-    color: #fff;
+    font-size: 18px;
+    display: block;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-size: 0.9em;
+}
+
+.vertical a:hover {
+    background-color: var(--sla);
+}
+
+#menu-toggle:checked ~ .vertical {
+    display: block;
+}
+
+#menu-toggle:checked + .botao-disciplinas {
+    background-color: var(--cor-header);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+footer {
+    background-color: var(--cor-header);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor-fundo);
 }
