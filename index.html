@@ -1,45 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio Escolar</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav class="nav-externa">
+            <ul>
+                <li><a href="#matematica">Matemática</a></li>
+                <li><a href="#fisica">Física</a></li>
+                <li><a href="#quimica">Química</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-interna">
+            <ul>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#provas">Provas</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <div class="logo">
-        <h1>Portfólio</h1>
-    </div>
-        <div class="menu">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="botao-disciplinas">Matérias</label>
-            <div class="vertical">
-                <a href="matematica.html">Matemática</a>
-                <a href="fisica.html">Física</a>
-                <a href="quimica.html">Química</a>
+    <main>
+        <!-- Matemática -->
+        <section id="matematica" class="disciplina">
+            <h2>Matemática</h2>
+            <div class="secao" id="atividades">
+                <h3>Atividades</h3>
+                <p>Lista de equações e gráficos resolvidos.</p>
             </div>
-        </div>
-    </div>
-</header>
+            <div class="secao" id="provas">
+                <h3>Provas</h3>
+                <p>Prova bimestral com foco em álgebra e geometria.</p>
+            </div>
+            <div class="secao" id="relatorios">
+                <h3>Relatórios</h3>
+                <p>Relatório sobre aplicações da matemática no cotidiano.</p>
+            </div>
+        </section>
 
-<div>
-    <h2>Como estudar:</h2>
-    <p>É comum vermos os jovens estudantes do ensino médio tentando fugir de estudar em casa, mas é importante que eles tenham em mente a importância do estudo diário e não só na véspera da prova. O estudo em casa deve ser uma tarefa contínua, porque o conteúdo programático dessa fase da educação é muito extenso e por muitas vezes podem existir dificuldades de aprendizado ou de fixação e memorização.</p>
-    <p>Para combater este mal, tantas vezes corriqueiro no dia a dia dos adolescentes, é preciso que eles façam a experiência de estudar diariamente por, pelo menos, um mês e verificar se o “sacrifício” compensa ou não. Com empenho vai ser fácil perceber o quanto estudar será fácil, as aulas se tornarão mais interessantes e as provas serão feitas como se fossem exercícios da tarefa de casa.</p>
-    
-    <h3>Como começar:</h3>
-    <p>Primeiramente, coloque como meta o ato de não estudar só na véspera da prova e jamais utilizar o período da madrugada para estudar. Além de não haver concentração suficiente nesta hora, o aluno fica com sono e não presta atenção na aula do dia seguinte. O ideal é criar um programa de estudos que acompanhe as suas aulas no colégio. Por exemplo, se durante a manhã você tem aula de Português, História, Geografia e Física então reserve quatro horas do seu dia para revisar o conteúdo dado em sala de aula e resolver exercícios (a única forma de se treinar as disciplinas exatas é resolvendo exercícios).</p>
-    <p>Mas, atenção! Quatro horas é um tempo suficiente para se dedicar ao estudo em casa (sem contar o tempo que fica na escola), mas se você precisar ficar um pouco mais de tempo para estudar para uma prova, por exemplo, não se esqueça de jamais ultrapassar cinco horas, sob pena de o seu esforço ser em vão. Afinal, o seu cérebro também precisa descansar e depois de certo tempo entra em sobrecarga e o conteúdo literalmente “se esparrama” da sua cabeça, não fica nada. Portanto, sem exageros!</p>
-    <p>O estudo diário ajuda a prevenir os desesperos de véspera de prova, já que estudando só no último dia você vai adquirir dúvidas que não poderão ser sanadas pelo professor. Mas, se você está com o conteúdo em dia e resolver dar uma revisada um pouco antes da prova, cuidado! As informações lidas por você nesse período poderão criar falsas associações e destruir o trabalho de um mês inteiro! Nesse tempo o melhor é relaxar, manter uma respiração calma e esvaziar a mente para que o conteúdo pedido nas questões flua naturalmente.</p>
-    <p>E lembre-se que além de estudar é preciso reservar um tempo para o lazer e para praticar exercícios, que ajuda a eliminar a tensão do cotidiano e prepara o corpo para aguentar mais uma maratona de estudo.</p>
-</div>
+        <!-- Física -->
+        <section id="fisica" class="disciplina">
+            <h2>Física</h2>
+            <div class="secao">
+                <h3>Atividades</h3>
+                <p>Exercícios sobre leis de Newton.</p>
+            </div>
+            <div class="secao">
+                <h3>Provas</h3>
+                <p>Prova com questões de movimento uniformemente variado.</p>
+            </div>
+            <div class="secao">
+                <h3>Relatórios</h3>
+                <p>Relatório de experimento sobre velocidade média.</p>
+            </div>
+        </section>
 
-<footer>
-    <p> © All Rigths Reserved - Portfólio 2025</p>
-</footer>
+        <!-- Química -->
+        <section id="quimica" class="disciplina">
+            <h2>Química</h2>
+            <div class="secao">
+                <h3>Atividades</h3>
+                <p>Atividades sobre tabela periódica e ligações químicas.</p>
+            </div>
+            <div class="secao">
+                <h3>Provas</h3>
+                <p>Prova sobre reações químicas e balanceamento.</p>
+            </div>
+            <div class="secao">
+                <h3>Relatórios</h3>
+                <p>Relatório de experimento sobre pH de soluções.</p>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>Portfólio Escolar | Desenvolvido por [Seu Nome] — © 2025</p>
+    </footer>
 </body>
 </html>
