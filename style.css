@@ -1,97 +1,38 @@
-* {
+/* Garante que o site ocupe a altura total da tela */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-:root {
-    --cor-header: #3b6064;
-    --cor-fundo: #c9e4ca;
-    --botao: #55828b;
-    --sla:#87bba2;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--cor-fundo);
-}
-
-header {
+/* Container flexível que organiza tudo verticalmente */
+.container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 35px;
-    background-color: var(--cor-header);
-    color: var(--cor-fundo);
-    position: relative;
+    flex-direction: column;
+    min-height: 100vh; /* faz o container ocupar 100% da altura da tela */
 }
 
-.logo h1 {
-    font-size: 24px;
-}
-
-.menu {
-    position: relative;
-    margin-left: 20px;
-}
-
-.botao-disciplinas {
-    cursor: pointer;
-    font-size: 18px;
-    background: none;
-    border: none;
-    padding: 1.05rem 1.05rem;
-    color: var(--cor-fundo);
-}
-
-.vertical {
-    display: none;
-    position: absolute;
-    background-color: var(--botao);
-    box-shadow: 0 2px 5px;
-    min-width: 190px;
-    z-index: 1;
-    left: 1rem;
-    top: 100%;
-}
-
-.vertical a {
-    color: var(--cor-fundo);
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-align: center;
-}
-
-.vertical a:hover {
-    background-color: var(--sla);
-}
-
-#menu-toggle:checked ~ .vertical {
-    display: block;
-}
-
-#menu-toggle:checked + .botao-disciplinas {
-    background-color: var(--cor-header);
-}
-
-#menu-toggle {
-    display: none;
+/* Header e footer não mudam de altura */
+header {
+    flex-shrink: 0;
 }
 
 footer {
-    background-color: var(--cor-header);
+    flex-shrink: 0;
+    background-color: #222;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 15px;
+    font-size: 0.9em;
 }
 
-footer p {
-    margin-bottom: 0px;
-    font-family: "Montserrat", sans-serif;
-    color: var(--cor-fundo);
+/* Main ocupa todo o espaço restante */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
+
 /* Estilo do menu hambúrguer */
 .menu-toggle {
     background-color: #333;
