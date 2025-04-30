@@ -1,41 +1,36 @@
-/* Garante que o site ocupe a altura total da tela */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-/* Container flexível que organiza tudo verticalmente */
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* faz o container ocupar 100% da altura da tela */
+    min-height: 100vh;
 }
 
-/* Header e footer não mudam de altura */
 header {
     flex-shrink: 0;
 }
 
 footer {
     flex-shrink: 0;
-    background-color: #222;
+    background-color: #3D365C;
     color: #fff;
     text-align: center;
     padding: 15px;
     font-size: 0.9em;
 }
 
-/* Main ocupa todo o espaço restante */
 main {
     flex-grow: 1;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #F8B55F;
 }
 
-/* Estilo do menu hambúrguer */
 .menu-toggle {
-    background-color: #333;
+    background-color: #7C4585;
     color: white;
     padding: 10px 15px;
     cursor: pointer;
@@ -45,7 +40,7 @@ main {
 
 .nav-menu {
     display: none;
-    background-color: #444;
+    background-color: #7C4585;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -69,7 +64,7 @@ main {
 }
 
 .nav-menu ul li a:hover {
-    background-color: #666;
+    background-color: #3D365C;
 }
 
 .nav-menu.active {
