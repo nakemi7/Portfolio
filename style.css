@@ -30,7 +30,7 @@ header {
     font-weight: 700;
 }
 .menu-toggle {
-    position: relative;
+    position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
