@@ -1,0 +1,57 @@
+/* Cabeçalho */
+header {
+    background-color: transparent; /* Remover a cor de fundo */
+    color: #2d3a4b; /* Texto em tom escuro para contraste */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Menu */
+.nav-menu {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 9;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #575757;
+}
+
+/* Rodapé */
+footer {
+    background-color: transparent; /* Remover a cor de fundo */
+    color: #2d3a4b; /* Texto em tom escuro para contraste */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
