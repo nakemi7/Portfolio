@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <title>Física | Portfólio</title>
     <link rel="stylesheet" href="materias.css">
 </head>
-
 <body>
     <div class="container">
-        <!-- Cabeçalho -->
         <header>
-            <!-- Menu Externo -->
             <div class="menu-toggle" onclick="toggleMenu('menuExterno')">☰ Disciplinas</div>
             <nav class="nav-menu" id="menuExterno">
                 <ul>
@@ -22,7 +18,6 @@
                 </ul>
             </nav>
 
-            <!-- Menu Interno -->
             <div class="menu-toggle" onclick="toggleMenu('menuInterno')">☰ Conteúdo</div>
             <nav class="nav-menu" id="menuInterno">
                 <ul>
@@ -33,11 +28,8 @@
             </nav>
         </header>
 
-        <!-- Conteúdo Principal -->
         <main>
             <h1 class="titulo">Física</h1>
-
-            <!-- Seção de Atividades -->
             <section id="atividades">
                 <h2 class="titulo-cor">Atividades</h2>
                 <ul>
@@ -46,8 +38,7 @@
                     <li><strong>Atividade 3 – Energia Mecânica:</strong> Resolva situações-problema envolvendo energia cinética (\( E_c = \frac{mv^2}{2} \)) e energia potencial gravitacional (\( E_p = mgh \)). Faça estimativas com diferentes massas e alturas em experimentos simulados (como quedas livres e rampas).</li>
                 </ul>
             </section>
-
-            <!-- Seção de Provas -->
+            
             <section id="provas">
                 <h2 class="titulo-cor">Provas</h2>
                 <ul>
@@ -56,25 +47,26 @@
                     <li><strong>Prova 3 – Energia Cinética e Potencial:</strong> Questões quantitativas e conceituais. Estudo de sistemas conservativos e não conservativos. Cálculos envolvendo a conservação da energia mecânica.</li>
                 </ul>
             </section>
-
-            <!-- Seção de Laboratórios -->
+            
             <section id="laboratorios">
                 <h2 class="titulo-cor">Laboratórios</h2>
                 <ul>
                     <li><strong>Experimento 1 – Eletrização por Atrito:</strong> Utilização de objetos simples como canudos de plástico, papel, balões e lã. Após esfregar o canudo em papel ou em tecido de lã, observar a atração ou repulsão entre objetos. Análise da transferência de elétrons entre os corpos e a criação de cargas elétricas opostas.</li>
+                    
                     <li><strong>Experimento 2 – Interação entre Cargas:</strong> Aproximação de dois canudos carregados para observar repulsão (cargas iguais) e atração entre o canudo carregado e objetos neutros (papel picado ou água em filete fino). Interpretação com base na Lei de Coulomb e polarização de corpos neutros.</li>
+                    
                     <li><strong>Experimento 3 – Detectando Cargas:</strong> Montagem de um eletroscópio caseiro com papel alumínio, clips e pote de plástico. Teste de diferentes objetos eletrizados para detectar presença e intensidade de cargas elétricas. Discussão sobre condutores, isolantes e descarregamento elétrico.</li>
                 </ul>
             </section>
+            
+            
         </main>
 
-        <!-- Rodapé -->
         <footer>
             <p>Desenvolvido por alunos do 3°J do CEP — © 2025</p>
         </footer>
     </div>
 
-    <!-- Script para o menu hamburguer -->
     <script>
         function toggleMenu(id) {
             const menu = document.getElementById(id);
@@ -82,5 +74,4 @@
         }
     </script>
 </body>
-
 </html>

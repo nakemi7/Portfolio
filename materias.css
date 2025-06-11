@@ -1,24 +1,43 @@
-/* Cabeçalho */
-header {
-    background-color: transparent; /* Remover a cor de fundo */
-    color: #2d3a4b; /* Texto em tom escuro para contraste */
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
+/* RESET de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Menu */
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container geral */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo do menu externo (disciplinas) */
+.menu-toggle {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Menu Externo */
 .nav-menu {
     display: none;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    z-index: 9;
+    list-style: none;
 }
 
 .nav-menu.active {
@@ -26,32 +45,82 @@ header {
 }
 
 .nav-menu ul {
-    list-style: none;
     padding: 0;
 }
 
-.nav-menu ul li {
+.nav-menu li {
     margin: 10px 0;
 }
 
-.nav-menu ul li a {
-    color: white;
+.nav-menu a {
     text-decoration: none;
-    font-size: 1.2rem;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+    color: white;
+    font-size: 18px;
 }
 
-.nav-menu ul li a:hover {
-    background-color: #575757;
+/* Títulos */
+.titulo {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo-cor {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Seções */
+section {
+    margin: 40px 0;
+}
+
+/* Lista de itens nas seções */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    font-size: 1.1rem;
+    margin: 10px 0;
 }
 
 /* Rodapé */
 footer {
-    background-color: transparent; /* Remover a cor de fundo */
-    color: #2d3a4b; /* Texto em tom escuro para contraste */
-    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
     text-align: center;
-    font-size: 0.9rem;
+}
+
+/* Estilo dos links do menu */
+nav a:hover {
+    color: #ff5722;
+    transition: color 0.3s ease;
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
