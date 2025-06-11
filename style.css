@@ -18,9 +18,8 @@ body {
 }
 
 header {
-    background-color: #fff; /* Fundo branco para o header */
-    color: #2d3a4b; /* Texto em um tom escuro para contraste */
-    padding: 20px 0;
+    background-color: #2d3a4b;
+    color: white;
     text-align: center;
     position: relative;
 }
