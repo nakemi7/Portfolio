@@ -1,4 +1,3 @@
-/* Resetando alguns estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -6,37 +5,31 @@
     font-family: Arial, sans-serif;
 }
 
-/* Estilo geral do body */
 body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
 
-/* Container centralizado */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #2d3a4b;
-    color: white;
+    background-color: #fff; /* Fundo branco para o header */
+    color: #2d3a4b; /* Texto em um tom escuro para contraste */
     padding: 20px 0;
     text-align: center;
     position: relative;
 }
 
-/* Título do cabeçalho */
 .titulozao {
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-/* Menu hamburguer */
-/* Estilos para o botão de menu */
 .menu-toggle {
     position: absolute;
     top: 20px;
