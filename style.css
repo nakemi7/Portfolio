@@ -20,8 +20,8 @@ body {
 header {
     background-color: #2d3a4b;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    position: relative;
 }
 
 .titulozao {
